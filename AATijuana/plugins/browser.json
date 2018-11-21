@@ -1,0 +1,73 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "app.aatijuana.com"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "app.aatijuana.com"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "app.aatijuana.com"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "app.aatijuana.com"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "app.aatijuana.com"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "app.aatijuana.com"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "app.aatijuana.com"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "app.aatijuana.com"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "app.aatijuana.com"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "app.aatijuana.com"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "app.aatijuana.com"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "app.aatijuana.com"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "app.aatijuana.com"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "app.aatijuana.com"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "app.aatijuana.com"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "app.aatijuana.com"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "app.aatijuana.com"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "app.aatijuana.com"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "app.aatijuana.com"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "app.aatijuana.com"
+        }
+    }
+}

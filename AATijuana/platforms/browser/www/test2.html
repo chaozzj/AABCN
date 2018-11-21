@@ -1,0 +1,251 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<title>Alcohólicos Anónimos BCN</title>
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+<link rel="stylesheet" type="text/css" href="styles/framework.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<style type="text/css">
+	.jumbotron {
+   
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+/*end of default style resetting*/
+
+
+.ui-widget-header {
+    background-image: none !important;
+    background-color: #f4decb !important; 
+}
+
+input, select {
+    vertical-align:middle;
+}
+h3, #next {
+  text-align: center;
+  display: inline-block;
+}
+
+#result {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #036;
+}
+
+#form div{
+  margin:auto;
+  max-width: 205px;
+}
+
+#progressbar {
+  float: none;
+  margin: auto;
+  margin-top: 20px;
+   
+  width: 50%;
+ }
+
+#container {
+  text-align: center;
+}
+
+.progress-bar {
+  float: left;
+  width: 0;
+  /*height: 100%;*/
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #337ab7;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+  -webkit-transition: width .6s ease;
+       -o-transition: width .6s ease;
+          transition: width .6s ease;
+}
+</style>
+</head>
+
+<body>
+	
+<div id="preloader" class="preloader-light">
+	<h1></h1>
+	<div id="preload-spinner"></div>
+	<p>Alcohólicos Anónimos BCN</p>
+	<em>Central Mexicana de Servicios Generales de Alcohós Anónimos, A.C.</em>
+</div>
+	
+<div id="page-transitions">
+	<div id="header" class="header-logo-left header-ligth" style="background-color: #ffffff;">
+		<a href="#" class="header-logo">A.A. BCN.</a>
+		<a href="#" class="header-icon header-icon-1 hamburger-animated" data-deploy-menu="menu-1"></a>
+		<a href="#" class="header-icon header-icon-2 font-14"><i class="fa fa-envelope-o"></i></a>
+		<!--<a href="#" class="header-icon header-icon-3 font-13 no-border" data-deploy-menu="menu-2"><i class="fa fa-bell-o font-12"></i></a>-->
+	</div>
+
+	<div id="menu-1" class="menu-wrapper menu-light menu-sidebar-left menu-large">
+		<div class="menu-scroll">
+			<!--<div class="menu-socials">
+				<a href="https://www.facebook.com/enabled.labs" class="font-12"><i class="fa facebook-color fa-facebook"></i></a>
+				<a href="https://twitter.com/iEnabled" class="font-12"><i class="fa twitter-color fa-twitter"></i></a>
+				<a href="https://plus.google.com/u/1/105775801838187143320" class="font-12"><i class="fa google-color fa-google-plus"></i></a>
+				<a href="tel:+(1234)567890" class="font-13"><i class="fa color-green-dark fa-phone"></i></a>
+				<a href="page-contact.html" class="font-13"><i class="fa color-blue2-light fa-envelope"></i></a>
+				<a href="#" class="font-14 close-menu"><i class="fa color-red-dark fa-times"></i></a>
+			</div>-->
+			<a href="#" onclick="navigatepage('index.html')" class="menu-logo" style="padding: 10px;"></a>
+			<!--<em class="menu-sub-logo">The Ultmate Mobile Solution</em>-->
+			<div class="menu">
+				<em class="menu-divider"><i class="fa fa-navicon"></i></em>
+				<a class="menu-item" href="#" onclick="navigatepage('ubicaciones.html')"><i class="font-15 fa color-yellow-dark fa-home"></i><strong>Ubicaciones</strong></a>
+				<a class="menu-item" href="#" onclick="navigatepage('about.html')"><i class="font-15 fa color-night-light fa fa-exclamation-circle"></i><strong>¿Que es A.A.?</strong></a>
+				<a class="menu-item" href="#" onclick="navigatepage('help.html')"><i class="font-15 fa color-blue-dark fa-handshake-o"></i><strong>¿Necesitas Ayuda?</strong></a>
+				<a class="menu-item" href="#" data-submenu="sub-1"><i class="font-14 fa color-teal-dark fa-edit"></i><strong>Autodiagnostico</strong></a>
+				<div id="sub-1" class="submenu-item">
+					<a href="#" onclick="navigatepage('test.html')" >¿Es A. A. para Usted?</a>
+					<a href="#" onclick="navigatepage('test2.html')" >¿Es A.A. para una Mujer como usted?</a>
+					<a href="#" onclick="navigatepage('test3.html')" >¿Es A.A. para un joven como tu?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="page-content" class="page-content">	
+		<div id="page-content-scroll">
+			<!--Enables this element to be scrolled --> 				
+			<div class="reading-bar"><div class="reading-line" style="width: 0%;"></div></div>
+			<div class="homepage-cta no-top">
+				<h1 class="half-top center-text no-bottom font-21">Autodiagnostico</h1>
+
+				<h2 class="center-text opacity-40">¿Tiene Problemas con su manera de beber?</h2>
+				<p class="boxed-text half-bottom" style="text-align: justify;">
+					La lista de preguntas que aparece a continuación puede ayudarle a descubrir si tiene problemas con su manera de beber.
+				</p>
+				<p class="boxed-text half-bottom" style="text-align: justify; padding-bottom: 20px;">
+					Debe tener presente que usted es la única persona que puede decir SI tiene o NO un problema. Aunque otros le hayan dicho que, si lo tiene, lo importante es que USTED DECIDA por sí mismo.
+				</p>
+				<a href="#" id="start" class="button button-full button-blue button-sm button-rounded uppercase ultrabold">Iniciar Autodiagnostico</a>
+			<br/>
+			<div class="well jumbotron">
+  				<h3 id="question" class="boxed-text half-bottom"></h3>
+  				<br/><br/>
+  				<form id="form"> 
+
+  				</form>
+  				<br/>
+  				<a href="#" id="next" class="button button-full button-blue button-sm button-rounded uppercase ultrabold">Siguiente</a><br/>
+  				<div id="progressbar" class="progress-bar progress-bar-striped"></div>
+			</div>
+			<div id="result" class="boxed-text half-bottom" style="text-align: justify;"></div>
+
+			
+			</div>
+		
+			
+			<!--<div class="footer footer-dark">
+				
+				<p class="copyright-text">Copyright &copy; Enabled <span id="copyright-year">2018</span>. All Rights Reserved.</p>
+			</div>-->
+			
+		</div>  
+	</div>
+	
+	<!-- Share Menu -->
+	<div id="menu-share" data-menu-size="380" class="menu-wrapper menu-light menu-bottom">
+		
+		<div class="content">
+			<ul class="link-list">
+				
+			</ul>
+		</div>
+	</div>
+	
+	<!-- Notification Bell Icon Menu -->
+	<div id="menu-2" data-menu-size="358" class="menu-wrapper menu-light menu-top menu-notification">
+		<div class="menu-scroll">
+			
+		</div>
+	</div>
+
+	<!-- Contact Icon Menu -->
+	<div id="menu-4" data-menu-size="385" class="menu-wrapper menu-light menu-bottom menu-contact">
+		<div class="menu-scroll">
+			<div class="contact-form">
+				<div class="formSuccessMessageWrap" id="formSuccessMessageWrap">
+					<p class="center-text full-bottom full-top"><i class="fa fa-2x fa-paper-plane-o"></i></p>
+					<h4 class="uppercase ultrabold half-bottom center-text">Message Sent</h4>
+					<p class="center-text boxed-text half-bottom">
+						We usually reply in less than 24 hours. <br/> Thank you for getting in touch with us!
+					</p>
+					<a href="#" class="button button-round color-white button-blue button-xs button-center close-menu uppercase bold full-bottom full-top">Return to Site</a>
+				</div>
+				<form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+					<fieldset>
+						<div class="menu-contact-title half-top">
+							<h4>Let's get in Touch</h4>
+							<h5 class="full-bottom">Get in touch with us. Send us a message and we'll get back to you in the shortest possible time!</h5>
+						</div>
+						<div class="formValidationError" id="contactNameFieldError">Name is required!</div>
+						<div class="formValidationError" id="contactEmailFieldError">Mail address required!</div>
+						<div class="formValidationError" id="contactEmailFieldError2">Mail address must be valid!</div>
+						<div class="formValidationError" id="contactMessageTextareaError"></div>
+						<div class="formFieldWrap">
+							<label class="field-title contactNameField" for="contactNameField"></label>
+							<input type="text" name="contactNameField" placeholder="John Doe" value="" class="contactField requiredField" id="contactNameField" />
+						</div>
+						<div class="formFieldWrap">
+							<label class="field-title contactEmailField" for="contactEmailField"></label>
+							<input type="text" name="contactEmailField" placeholder="mail@domain.com" value="" class="contactField requiredField requiredEmailField" id="contactEmailField" />
+						</div>
+						<div class="clear"></div>
+						<div class="formTextareaWrap half-bottom">
+							<label class="field-title contactMessageTextarea" for="contactMessageTextarea"></label>
+							<textarea name="contactMessageTextarea" placeholder="Enter your message here." class="contactTextarea requiredField" id="contactMessageTextarea"></textarea>
+						</div>
+						<div class="contactFormButton">
+							<input type="submit" class="buttonWrap contactSubmitButton" id="contactSubmitButton" value="Send Message" data-formId="contactForm" />
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>	
+	
+	<a href="#" class="back-to-top-badge back-to-top-small"><i class="fa fa-angle-up"></i>Back to Top</a>
+</div>
+<script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="scripts/plugins.js"></script>
+<script type="text/javascript" src="js/survey2.js"></script>
+<script type="text/javascript"> 
+        function navigatepage($pagename){
+                      window.location.href = $pagename;
+    }
+    </script>
+</body>
