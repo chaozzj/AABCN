@@ -25,11 +25,11 @@
 </div>
 	
 <div id="page-transitions">
-	<div id="header" class="header-logo-left header-ligth" style="background-color: #ffffff;">
-		<a class="header-logo"><img data-src="img/logo.png" src="img/logo.png" id="toplogo"></a>
+	<div id="header" class="header-logo-left header-ligth" style="background-color:#d5dbd9;">
+		<a class="header-logo"><img data-src="img/isotipo.png" src="img/isotipo.png" id="toplogo" style="width: 70%; padding-top: 3px"></a>
 		
 		<a href="#" class="header-icon header-icon-1 hamburger-animated" data-deploy-menu="menu-1"></a>
-		<a href="#" class="header-icon header-icon-2 font-14" ><i class="fa fa-envelope-o"></i></a>
+		<a href="#" class="header-icon header-icon-2 font-14" ><i class="fa fa-podcast"></i></a>
 		<!--<a href="#" class="header-icon header-icon-3 font-13 no-border" data-deploy-menu="menu-2"><i class="fa fa-bell-o font-12"></i></a>-->
 	</div>
 
@@ -47,7 +47,8 @@
             <!--<em class="menu-sub-logo">The Ultmate Mobile Solution</em>-->
             <div class="menu">
                 <em class="menu-divider"><i class="fa fa-navicon"></i></em>
-                <a class="menu-item" href="#" onclick="navigatepage('ubicaciones.html')"><i class="font-15 fa color-yellow-dark fa-home"></i><strong>Ubicaciones</strong></a>
+                <a class="menu-item" href="#" onclick="navigatepage('index.html')"><i class="font-15 fa color-yellow-dark fa-home"></i><strong>Inicio</strong></a>
+                <a class="menu-item" href="#" onclick="navigatepage('ubicaciones.html')"><i class="font-15 fa color-blue-dark fa-podcast"></i><strong>Ubicaciones</strong></a>
                 <a class="menu-item" href="#" onclick="navigatepage('about.html')"><i class="font-15 fa color-night-light fa fa-exclamation-circle"></i><strong>¿Que es A.A.?</strong></a>
                 <a class="menu-item" href="#" onclick="navigatepage('help.html')"><i class="font-15 fa color-blue-dark fa-handshake-o"></i><strong>¿Necesitas Ayuda?</strong></a>
                 <a class="menu-item" href="#" data-submenu="sub-1"><i class="font-14 fa color-teal-dark fa-edit"></i><strong>Autodiagnostico</strong></a>
@@ -61,10 +62,37 @@
     </div>
 	
 	<div id="page-content" class="page-content">	
-		<div id="page-content-scroll"><!--Enables this element to be scrolled --> 			
-				
+		<div id="page-content-scroll"><!--Enables this element to be scrolled --> 
+
+		<div class="coverpage">
+				<div class="cover-slider owl-carousel owl-no-dots">
+					<div class="cover-item" style="background-image:url(img/man.jpg);">
+						<div class="cover-content cover-content-center">
+							<h1 class="color-white center-text uppercase ultrabold full-top fa-2x">¿Es A. A. para Usted?</h1>
+							<div class="deco-thick bg-orange-dark half-top half-bottom"></div>
+							<a href="#" onclick="navigatepage('test.html')" class="button button-blue color-white button-round button-center uppercase ultrabold button-s">Autodiagnostico</a>
+						</div>
+						<div class="cover-overlay overlay overlay-gradient-small"></div>
+					</div>
+					<div class="cover-item" style="background-image:url(img/woman.jpg); background-position: center;">
+						<div class="cover-content cover-content-center">
+							<h1 class="color-white center-text uppercase ultrabold full-top fa-2x">¿Es A.A. para una Mujer como usted?</h1>
+							<div class="deco-thick bg-orange-dark half-top half-bottom"></div>
+							<a href="#" onclick="navigatepage('test2.html')" class="button button-blue color-white button-round button-center uppercase ultrabold button-s">Autodiagnostico</a>
+						</div>
+						<div class="cover-overlay overlay overlay-gradient-small"></div>
+					</div>	
+					<div class="cover-item" style="background-image:url(img/younger.png);">
+						<div class="cover-content cover-content-center">
+							<h1 class="color-white center-text uppercase ultrabold full-top fa-2x">¿Es A.A. para un joven como tu?</h1>
+							<div class="deco-thick bg-orange-dark half-top half-bottom"></div>
+							<a href="#" onclick="navigatepage('test3.html')" class="button button-blue color-white button-round button-center uppercase ultrabold button-s">Autodiagnostico</a>
+						</div>
+						<div class="cover-overlay overlay overlay-gradient-small"></div>
+					</div>	
+				</div>
+			</div>		
 			<div class="content">
-                <img data-src="img/logo.png" src="img/logo.png" class="preload-image responsive-image no-bottom">
                 <div class="decoration decoration-margins"></div>
 				<div class="icon-column">
 					<i class="fa fa-bullhorn color-blue-dark"></i>

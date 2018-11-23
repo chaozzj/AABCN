@@ -3,23 +3,23 @@
 /*--------------Logos------------*/
 /*--Added here for fast editing--*/
 
-.header-light .header-logo{background-image:url(../img/logo.png)!important;}
-.header-dark .header-logo{background-image:url(../img/logo.png)!important;}
+.header-light .header-logo{background-image:url(../img/isotipo.png)!important;}
+.header-dark .header-logo{background-image:url(../img/isotipo.png)!important;}
 .header-logo{background-size:50px 50px;	width:74px;	height:55px;}
 
 .footer-logo{height:25px; background-size:50px 50px;}
 .footer-light .footer-logo{background-image:url(../img/logo.png);}
 .footer-dark .footer-logo{background-image:url(../img/logo.png);}
 
-.menu-dark.menu-large .menu-logo{background-image:url(../img/logo.png);}
-.menu-light.menu-large .menu-logo{background-image:url(../img/logo.png);}
-.menu-large .menu-logo{background-size:120px 100px;}
+.menu-dark.menu-large .menu-logo{background-image:url(../img/isotipo.png);}
+.menu-light.menu-large .menu-logo{background-image:url(../img/isotipo.png);}
+.menu-large .menu-logo{background-size:150px 150px;}
 
 .menu-perspective .menu-logo{background-image:url(../img/logo.png);}
-.menu-perspective .menu-logo{background-size:100px 100px;}
+.menu-perspective .menu-logo{background-size:150px 150px;}
 .menu-perspective-background{background-image:url(../images/pictures_vertical/bg-perspective.png);}
 
-.menu-thumbnails .menu-logo .menu-logo-image{height:20px; background-size:100px 100px;}
+.menu-thumbnails .menu-logo .menu-logo-image{height:200px !important; background-size:150px 150px;}
 .menu-dark.menu-thumbnails .menu-logo .menu-logo-image{background-image:url(../img/logo.png);}
 .menu-light.menu-thumbnails .menu-logo .menu-logo-image{background-image:url(../img/logo.png);}
 
