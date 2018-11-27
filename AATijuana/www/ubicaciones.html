@@ -7,15 +7,30 @@
 <link rel="stylesheet" type="text/css" href="styles/style.css">
 <link rel="stylesheet" type="text/css" href="styles/framework.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+   integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+   crossorigin=""></script>
+
 <style type="text/css">
 	#toplogo{
 		max-width: 60px;
 	}
-	#mapid { 
-   		height: 600px; 
+	#map{ 
+   		height: 620px; 
    		width: 400px; 
-   		margin-left: -10px;
+   		/*margin-left: -10px;*/
+   		position: static;
    	}
+   	#header{
+		 -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+	}
 </style>
 
 </head>
@@ -69,99 +84,103 @@
 	<div id="page-content" class="page-content">	
 		<div id="page-content-scroll"><!--Enables this element to be scrolled --> 			
 				
-			<div class="content">
-				 <div id="mapid">
+		<div id="map">
 				 	
 				 </div>
+
+			<div class="content">
+				 
+</div>
 <script type="text/javascript">
-
-function loadmap(){
-	var mymap = L.map('mapid').setView([31.86070, -116.61028], 8);
-
-	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox.streets',
-    accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
-}).addTo(mymap);
-
-	/*var request = new XMLHttpRequest();
-	request.open('GET', 'http://aatijuana.com/settings/places_json)', true);
+function getData(){
+	var request = new XMLHttpRequest();
+	
+	request.open('GET', 'http://aatijuana.com/settings/places_json', true);
 
 	request.onload = function() {
 		if (request.status >= 200 && request.status < 400) {
 			// Success!
 			var loadedData = JSON.parse(request.responseText);
 			//var data = getDataArray(this.responseText);
-     		console.log('loadedData->',loadedData);
-     
-     		var data = {
+      		console.log('loadedData->',loadedData);
+      
+      		var data = {
   				type: "FeatureCollection",
   				features: [],
 			};
-			
-			var coords=[];
-	
-			for (i = 0; i < loadedData.resource.length; i++) {
+
+			for (i = 0; i < loadedData.length; i++) {
 				//  if (loadedData.resource[i].element_id===10) {
 				data.features.push({
     				"type": "Feature",
-    				"properties":{
-    					"description":[loadedData.resource[i].description]
-    				},
     				"geometry": {
-     					"type": "Point",
-     					"coordinates": [loadedData.resource[i].coordinates]
+    					"type": "Point",
+    					"coordinates": [loadedData[i].lat*1, loadedData[i].lon*1]
     				},
-    				"properties": 
-     				loadedData.resource[i]
-     			});
+    				"properties": {
+    					"popupContent": "<div><h1 style=\"text-align:center;\">" +loadedData[i].name +"</h1><h3>"+loadedData[i].description +"</h3></div>"
+    				}
+    				
+    			});
 			}
-	
-			for (i = 0; i < loadedData.resource.length; i++){
-					coords.push([loadedData.resource[i].longitude*1, loadedData.resource[i].latitude*1]);
-			}
-			
-	
-			var mdata ={
-				"type":"Point",
-				"coordinates": coords
-			}
-	
-     		console.log('GeoJsonData->',data) ;
-     		//console.log('GeoJsonData2->',coords) ;
 
-			gjdata=data;
+    		console.log('GeoJsonData->',data) ;
+    		//console.log('GeoJsonData2->',coords) ;
+      	
+      		gjdata=data;
+		
+			populateMap(data);
+      	} else {
+				// We reached our target server, but it returned an error
 
-     		L.geoJson(gjdata).addTo(map);*/
-
-
-
-var marker2 = L.marker( [31.86576,-115.61042]).addTo(mymap);
-marker2.bindPopup("Grupo 10 de Abril.").openPopup();
-
-var marker3 = L.marker( [31.86076,-114.61042]).addTo(mymap);
-marker3.bindPopup("Grupo 2 de Abril.").openPopup();
-
-var marker = L.marker( [31.86076,-116.61042]).addTo(mymap);
-marker.bindPopup("Grupo 1 de Abril.").openPopup();
-
-/*var marker4 = L.marker( [31.86070, -116.61028]).addTo(mymap);
-marker4.bindPopup("Grupo 5 de Abril.").openPopup();*/
-			/*populateMap(data,coords);*/
-/*
-
-     	} else {
-				console.log('error loading map');
-	
 		}
-	};*/
+	};
+
+	request.onerror = function() {
+			// There was a connection error of some sort
+	};
+	
+	request.send();
 }
+
+function populateMap(data) {
+	var map = L.map('map').setView([31.86070, -116.61028], 13);
+
+	L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
+	}).addTo(map);
+
+	function onEachFeature(feature, layer) {
+    	// does this feature have a property named popupContent?
+    	if (feature.properties && feature.properties.popupContent) {
+        	layer.bindPopup(feature.properties.popupContent);
+    	}
+	}
+
+    L.geoJson(data,{
+    	onEachFeature: onEachFeature
+    }).addTo(map);
+
+    /*var popup = L.popup();
+
+	function onMapClick(e) {
+	    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(map);
+	}
+
+	map.on('click', onMapClick);*/
+           
+ }
 
 r(function() {
 //codigo cuando está listo el dom 
 	console.log('DOM Ready');
-	loadmap();
+	getData();
 });
 
 function r(f) {
@@ -170,7 +189,7 @@ function r(f) {
 </script>
 
 				
-			</div>
+			
 			
 			<div class="footer footer-dark">
 				<!--<a href="#" class="footer-logo"></a>
