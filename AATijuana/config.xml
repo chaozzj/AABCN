@@ -30,12 +30,12 @@
     <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1" />
     <plugin name="cordova-plugin-inappbrowser" />
     <platform name="android">
-        <icon qualifier="ldpi" src="www/res/icons/android/drawable-ldpi-icon1.png" />
-        <icon qualifier="mdpi" src="www/res/icons/android/drawable-mdpi-icon1.png" />
-        <icon qualifier="hdpi" src="www/res/icons/android/drawable-hdpi-icon1.png" />
-        <icon qualifier="xhdpi" src="www/res/icons/android/drawable-xhdpi-icon1.png" />
-        <icon qualifier="xxhdpi" src="www/res/icons/android/drawable-xxhdpi-icon1.png" />
-        <icon qualifier="xxxhdpi" src="www/res/icons/android/drawable-xxxhdpi-icon1.png" />
+        <icon qualifier="ldpi" src="www/res/icon/android/drawable-ldpi-icon1.png" />
+        <icon qualifier="mdpi" src="www/res/icon/android/drawable-mdpi-icon1.png" />
+        <icon qualifier="hdpi" src="www/res/icon/android/drawable-hdpi-icon1.png" />
+        <icon qualifier="xhdpi" src="www/res/icon/android/drawable-xhdpi-icon1.png" />
+        <icon qualifier="xxhdpi" src="www/res/icon/android/drawable-xxhdpi-icon1.png" />
+        <icon qualifier="xxxhdpi" src="www/res/icon/android/drawable-xxxhdpi-icon1.png" />
 
         <splash density="land-ldpi" src="www/res/screen/android/drawable-land-ldpi-screen1.png" />
         <splash density="land-mdpi" src="www/res/screen/android/drawable-land-mdpi-screen1.png" />
@@ -49,8 +49,7 @@
         <splash density="port-xhdpi" src="www/res/screen/android/drawable-port-xhdpi-screen1.png" />
         <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen1.png" />
         <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen1.png" />
-    </platform>
-    
+    </platform>  
     <access origin="*" />
     <access origin="whatsapp:*" launch-external="yes" />
     <allow-intent href="http://*/*" />
@@ -61,10 +60,6 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
-    </platform>
-    <platform name="ios">
-        <allow-intent href="itms:*" />
-        <allow-intent href="itms-apps:*" />
     </platform>
     <feature name="Whatsapp">
         <param name="android-package" value="mobi.moica.whatsapp.Whatsapp" />
