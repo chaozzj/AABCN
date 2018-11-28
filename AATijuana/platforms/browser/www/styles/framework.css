@@ -202,7 +202,7 @@ sup{top: -15px;} sub{bottom: 0px;}
 .font-17{font-size:17px!important;}
 .font-18{font-size:18px!important;}
 .font-19{font-size:19px!important;}
-.font-20{font-size:20px!important;}
+.font-20{font-size:40px!important;}
 .font-21{font-size:21px!important;}
 
 /*---Background & Colors---*/
@@ -2286,27 +2286,27 @@ input[type="range"]::-webkit-slider-thumb:after{
 #header *{transition:all 250ms ease;}
 .header-logo-center .header-logo{left:50%;	margin-left:-37px;}
 .header-logo-center .header-icon-1{border-right:solid 1px; left:0px;}
-.header-logo-center .header-icon-2{ left:50px;}
+.header-logo-center .header-icon-2{ left:45%;}
 .header-logo-center .header-icon-3{right:50px;}
 .header-logo-center .header-icon-4{border-left:solid 1px; right:0px;}
 
 .header-logo-left .header-logo{left:20px;}
 .header-logo-left .header-icon-4{right:150px;}
 .header-logo-left .header-icon-3{right:100px; border-left:solid 1px;}
-.header-logo-left .header-icon-2{right:50px; border-left:solid 1px;}
+.header-logo-left .header-icon-2{right:45%; }
 .header-logo-left .header-icon-1{right:0px; border-left:solid 1px;}
 
 .header-logo-right .header-logo{right:20px;}
 .header-logo-right .header-icon-4{left:150px;}
 .header-logo-right .header-icon-3{left:100px; border-left:solid 1px;}
-.header-logo-right .header-icon-2{left:50px; border-left:solid 1px;}
+.header-logo-right .header-icon-2{left:45%; }
 .header-logo-right .header-icon-1{left:0px; border-left:solid 1px;}
 
 .header-logo-app .header-logo{left:60px;}
 .header-logo-app .header-title{left:60px; position:absolute;}
 .header-logo-app .header-icon-4{right:0px; border-left:solid 1px;}
 .header-logo-app .header-icon-3{right:100px; border-left:solid 1px;}
-.header-logo-app .header-icon-2{right:50px; border-left:solid 1px;}
+.header-logo-app .header-icon-2{right:45%;}
 .header-logo-app .header-icon-1{left:0px; border-left:solid 1px;}
 
 .header-title{
