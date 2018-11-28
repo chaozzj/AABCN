@@ -2772,12 +2772,12 @@ input[type="range"]::-webkit-slider-thumb:after{
 .menu-large .menu-logo{
 	padding:40px 0px 40px 0px;
 	background-repeat: no-repeat;
-	background-position: left 100px center;
+	background-position: left 80px center;
 	display:block;
 	float:none;
 	clear:both;
 	width:100%;
-	height:200px;
+	height:220px;
 	z-index:999999999;
 	position:relative;
 	pointer-events: all!important;

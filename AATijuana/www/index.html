@@ -34,7 +34,7 @@
 		<a class="header-logo"><img data-src="img/isotipo.png" src="img/isotipo.png" id="toplogo" style="width: 70%; padding-top: 3px"></a>
 		
 		<a href="#" class="header-icon header-icon-1 hamburger-animated" data-deploy-menu="menu-1"></a>
-		<a href="#" class="header-icon header-icon-2 font-14" ><i class="fa fa-podcast"></i></a>
+		<a href="tel://6646241418" class="header-icon header-icon-2 font-20" ><i class="fa fa-phone"></i></a>
 		<!--<a href="#" class="header-icon header-icon-3 font-13 no-border" data-deploy-menu="menu-2"><i class="fa fa-bell-o font-12"></i></a>-->
 	</div>
 
@@ -54,9 +54,14 @@
                 <em class="menu-divider"><i class="fa fa-navicon"></i></em>
                 <a class="menu-item" href="#" onclick="navigatepage('index.html')"><i class="font-15 fa color-yellow-dark fa-home"></i><strong>Inicio</strong></a>
                 <a class="menu-item" href="#" onclick="navigatepage('ubicaciones.html')"><i class="font-15 fa color-blue-dark fa-podcast"></i><strong>Ubicaciones</strong></a>
-                <a class="menu-item" href="#" onclick="navigatepage('about.html')"><i class="font-15 fa color-night-light fa fa-exclamation-circle"></i><strong>¿Que es A.A.?</strong></a>
+                <a class="menu-item" href="#" data-submenu="sub-2"><i class="font-15 fa color-blue-dark  fa fa-exclamation-circle"></i><strong>Nosotros</strong></a>
+                <div id="sub-2" class="submenu-item">
+                    <a href="#" onclick="navigatepage('about.html')" >¿Que es A.A.?</a>
+                    <a href="#" onclick="navigatepage('wddo.html')" >¿Que no hace A.A.?</a>
+                    <a href="#" onclick="navigatepage('hwork.html')" >¿Cómo funciona?</a>
+                </div>
                 <a class="menu-item" href="#" onclick="navigatepage('help.html')"><i class="font-15 fa color-blue-dark fa-handshake-o"></i><strong>¿Necesitas Ayuda?</strong></a>
-                <a class="menu-item" href="#" data-submenu="sub-1"><i class="font-14 fa color-teal-dark fa-edit"></i><strong>Autodiagnostico</strong></a>
+                <a class="menu-item" href="#" data-submenu="sub-1"><i class="font-14 fa color-blue-dark  fa-edit"></i><strong>Autodiagnostico</strong></a>
                 <div id="sub-1" class="submenu-item">
                     <a href="#" onclick="navigatepage('test.html')" >¿Es A. A. para Usted?</a>
                     <a href="#" onclick="navigatepage('test2.html')" >¿Es A.A. para una Mujer como usted?</a>
@@ -97,51 +102,8 @@
 					</div>	
 				</div>
 			</div>		
-			<div class="content">
-                <div class="decoration decoration-margins"></div>
-				<div class="icon-column">
-					<i class="fa fa-bullhorn color-blue-dark"></i>
-					<h1 class="uppercase ultrabold"><a href="#" onclick="cordova.InAppBrowser.open('http://aamexico.org.mx/para-los-medios-de-comunicacion','_system'); return false;" style="color: #000000;">PARA LOS MEDIOS DE COMUNICACIÓN</a></h1>
-					<p>
-						Nuestra gratitud por su colaboración en la transmisión del mensaje de AA.
-					</p>
-				</div>
-				<div class="icon-column">
-					<i class="fa fa-book color-yellow-dark"></i>
-					<h1 class="uppercase ultrabold"><a href="#" onclick="cordova.InAppBrowser.open('http://aamexico.org.mx/para-los-profesionales','_system'); return false;" style="color: #000000;">PARA LOS PROFESIONALES</a></h1>
-					<p>
-						Gratitud a nuestros grandes aliados.
-					</p>
-				</div>				
-				<div class="icon-column">
-					<i class="fa fa-building-o color-green-dark"></i>
-					<h1 class="uppercase ultrabold"><a href="#" onclick="cordova.InAppBrowser.open('http://aamexico.org.mx/oficina-servicios-generales','_system'); return false;" style="color: #000000;">OFICINA DE SERVICIOS GENERALES</a></h1>
-					<p>
-						¿Cómo empezó? y ¿Qué servicios presta?. Visita virtual.
-					</p>
-				</div>	
-				<div class="icon-column">
-					<i class="fa fa-heart color-red-dark"></i>
-					<h1 class="uppercase ultrabold"><a href="#" onclick="cordova.InAppBrowser.open('http://aamexico.org.mx/archivos-historicos','_system'); return false;" style="color: #000000;">ARCHIVOS HISTÓRICOS</a></h1>
-					<p>
-						Un legado de amor y servicio en la historia. Visita virtual del Museo Nacional de Archivos Históricos de AA 
-					</p>
-				</div>
-			</div>
 			
-			<div class="footer footer-dark">
-				<!--<a href="#" class="footer-logo"></a>
-				<p>Simplicity and power packed into a beautiful, feature filled, fast, mobile template.</p>-->
-				<!--<div class="footer-socials">
-					<a href="#" class="scale-hover icon icon-round no-border icon-xs facebook-bg border-teal-3d"><i class="fa fa-facebook"></i></a>
-					<a href="#" class="scale-hover icon icon-round no-border icon-xs twitter-bg"><i class="fa fa-twitter"></i></a>
-					<a href="#" class="scale-hover icon icon-round no-border icon-xs google-bg"><i class="fa fa-google-plus"></i></a>
-					<a href="#" class="scale-hover icon icon-round no-border icon-xs phone-bg"><i class="fa fa-phone"></i></a>
-					<a href="#" data-deploy-menu="menu-share" class="scale-hover icon icon-round no-border icon-xs bg-teal-dark"><i class="fa fa-retweet font-15"></i></a>
-					<a href="#" class="scale-hover icon icon-round no-border icon-xs back-to-top bg-blue-dark"><i class="fa fa-angle-up font-16"></i></a>
-				</div>-->
-				<p class="copyright-text">Copyright &copy; Enabled <span id="copyright-year">2018</span>. All Rights Reserved.</p>
-			</div>
+	
 			
 		</div>  
 	</div>
