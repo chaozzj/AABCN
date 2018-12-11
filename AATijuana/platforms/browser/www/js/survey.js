@@ -75,7 +75,7 @@ $(document).ready(function(){
         });*/
       if(currentquestion<allQuestions.length){
         setupOptions();
-        if((correctAnswers>3) || (currentquestion==allQuestions.length-1)){
+        if((currentquestion==allQuestions.length-1)){
           $next.html("Resultados");
           $next.click(function(){
             $jumbotron.hide();
