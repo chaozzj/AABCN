@@ -20,9 +20,9 @@
 	#toplogo{
 		max-width: 60px;
 	}
-	#map{ 
-   		height: 620px; 
-   		width: 400px; 
+	#map{
+   		height: 620px;
+   		width: 400px;
    		/*margin-left: -10px;*/
    		position: static;
    	}
@@ -36,19 +36,19 @@
 </head>
 
 <body>
-	
+
 <div id="preloader" class="preloader-light">
 	<h1></h1>
 	<div id="preload-spinner"></div>
 	<p>Alcohólicos Anónimos BCN</p>
 	<em>Central Mexicana de Servicios Generales de Alcohós Anónimos, A.C.</em>
 </div>
-	
+
 <div id="page-transitions">
 	<div id="header" class="header-logo-left header-ligth" style="background-color:#d5dbd9;">
 		<a class="header-logo"><img data-src="img/isotipo.png" src="img/isotipo.png" id="toplogo" style="width: 70%; padding-top: 3px"></a>
-		
-		<a href="#" class="header-icon header-icon-1 hamburger-animated" data-deploy-menu="menu-1"></a>
+
+		<a href="#" id="menu" class="header-icon header-icon-1 hamburger-animated" data-deploy-menu="menu-1" style="background-color:rgb(49, 64, 147); color:#ffffff;"></a>
 		<a href="tel://6646241418" class="header-icon header-icon-2 font-20" ><img data-src="img/isotipo.png" src="img/call.png" style="width: 100%; padding-top: 3px"></a>
 		<!--<a href="tel://6646241418" class="header-icon header-icon-2 font-20" ><i class="fa fa-phone"></i></a>
 		<a href="#" class="header-icon header-icon-3 font-13 no-border" data-deploy-menu="menu-2"><i class="fa fa-bell-o font-12"></i></a>-->
@@ -94,20 +94,20 @@
         </div>
     </div>
 
-	<div id="page-content" class="page-content">	
-		<div id="page-content-scroll"><!--Enables this element to be scrolled --> 			
-				
+	<div id="page-content" class="page-content">
+		<div id="page-content-scroll"><!--Enables this element to be scrolled -->
+
 		<div id="map">
-				 	
+
 				 </div>
 
 			<div class="content">
-				 
+
 </div>
 <script type="text/javascript">
 function getData(){
 	var request = new XMLHttpRequest();
-	
+
 	request.open('GET', 'http://aatijuana.com/settings/places_json', true);
 
 	request.onload = function() {
@@ -116,7 +116,7 @@ function getData(){
 			var loadedData = JSON.parse(request.responseText);
 			//var data = getDataArray(this.responseText);
       		console.log('loadedData->',loadedData);
-      
+
       		var data = {
   				type: "FeatureCollection",
   				features: [],
@@ -133,15 +133,15 @@ function getData(){
     				"properties": {
     					"popupContent": "<div><h1 style=\"text-align:center;\">" +loadedData[i].place_name +"</h1><h3>"+loadedData[i].place_description +"</h3><a href=\"#\" class=\" button button-full button-blue button-sm button-rounded uppercase ultrabold\" style=\"color:#ffffff;\" onclick=\"cordova.InAppBrowser.open('"+loadedData[i].urlmap+ "','_system'); return false;\" >Ir a Google Maps</a></div>"
     				}
-    				
+
     			});
 			}
 
     		console.log('GeoJsonData->',data) ;
     		//console.log('GeoJsonData2->',coords) ;
-      	
+
       		gjdata=data;
-		
+
 			populateMap(data);
       	} else {
 				// We reached our target server, but it returned an error
@@ -152,7 +152,7 @@ function getData(){
 	request.onerror = function() {
 			// There was a connection error of some sort
 	};
-	
+
 	request.send();
 }
 
@@ -187,11 +187,11 @@ function populateMap(data) {
 	}
 
 	map.on('click', onMapClick);*/
-           
+
  }
 
 r(function() {
-//codigo cuando está listo el dom 
+//codigo cuando está listo el dom
 	console.log('DOM Ready');
 	getData();
 });
@@ -201,9 +201,9 @@ function r(f) {
 }
 </script>
 
-				
-			
-			
+
+
+
 			<div class="footer footer-dark">
 				<!--<a href="#" class="footer-logo"></a>
 				<p>Simplicity and power packed into a beautiful, feature filled, fast, mobile template.</p>-->
@@ -217,24 +217,24 @@ function r(f) {
 				</div>-->
 				<p class="copyright-text">Copyright &copy; Enabled <span id="copyright-year">2018</span>. All Rights Reserved.</p>
 			</div>
-			
-		</div>  
+
+		</div>
 	</div>
-	
+
 	<!-- Share Menu -->
 	<div id="menu-share" data-menu-size="380" class="menu-wrapper menu-light menu-bottom">
-		
+
 		<div class="content">
 			<ul class="link-list">
-				
+
 			</ul>
 		</div>
 	</div>
-	
+
 	<!-- Notification Bell Icon Menu -->
 	<div id="menu-2" data-menu-size="358" class="menu-wrapper menu-light menu-top menu-notification">
 		<div class="menu-scroll">
-			
+
 		</div>
 	</div>
 
@@ -280,8 +280,8 @@ function r(f) {
 				</form>
 			</div>
 		</div>
-	</div>	
-	
+	</div>
+
 	<a href="#" class="back-to-top-badge back-to-top-small"><i class="fa fa-angle-up"></i>Back to Top</a>
 </div>
 <script type="text/javascript" src="cordova.js"></script>
@@ -292,7 +292,7 @@ function r(f) {
 <script type="text/javascript" src="scripts/jquery.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
 <script type="text/javascript" src="scripts/plugins.js"></script>
-<script type="text/javascript"> 
+<script type="text/javascript">
         function navigatepage($pagename){
                       window.location.href = $pagename;
     }
